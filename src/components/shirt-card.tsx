@@ -1,3 +1,4 @@
+import { ShirtType } from "../types/shirtCard";
 import { Button } from "../ui/button";
 import {
   Card,
@@ -7,16 +8,18 @@ import {
   CardTitle,
 } from "../ui/card";
 
-export function ShirtCard() {
+export function ShirtCard(props: ShirtType) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Dust Painted Shirt</CardTitle>
+        <CardTitle>{props.title}</CardTitle>
       </CardHeader>
       <CardContent>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores in
-        porro voluptatum autem? Hic tempora sapiente veritatis unde debitis
-        ducimus!
+        <p>{props.description}</p>
+        <img src={props.img} alt="shirt image" />
+        <p>
+          Price: <span class="text-xl font-bold">$ {props.price}</span>
+        </p>
       </CardContent>
       <CardFooter class="border-green-50">
         <Button
