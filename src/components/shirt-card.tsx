@@ -1,3 +1,4 @@
+import { A } from "@solidjs/router";
 import { ShirtType } from "../types/shirtCard";
 import { Button } from "../ui/button";
 import {
@@ -22,14 +23,9 @@ export function ShirtCard(props: ShirtType) {
         </p>
       </CardContent>
       <CardFooter class="border-green-50">
-        <Button
-          onClick={() => {
-            console.log("hello from click");
-          }}
-          class="bg-green-500 w-full"
-        >
+        <A href={`/product/${props.id}`} class="bg-sky-500 w-full">
           Buy Now
-        </Button>
+        </A>
       </CardFooter>
     </Card>
   );

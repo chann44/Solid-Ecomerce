@@ -7,6 +7,7 @@ import App from "./pages/home";
 import { About } from "./pages/about";
 import { AppLayout } from "./pages/layout";
 import { Cart } from "./pages/cart";
+import { Product } from "./pages/product";
 
 const root = document.getElementById("root");
 
@@ -16,6 +17,7 @@ render(
       <Route path="/" component={App} />
       <Route path="/about" component={About} />
       <Route path="/cart" component={Cart} />
+      <Route path="/product/:id" component={Product} />
     </Router>
   ),
   root!
