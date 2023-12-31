@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@solidjs/router": "^0.10.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-solid": "^0.303.0",
