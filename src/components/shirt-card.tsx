@@ -1,6 +1,5 @@
 import { A } from "@solidjs/router";
 import { ShirtType } from "../types/shirtCard";
-import { Button } from "../ui/button";
 import {
   Card,
   CardContent,
@@ -8,6 +7,8 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
+import { cn } from "../lib/utils";
+import { buttonVariants } from "../ui/button";
 
 export function ShirtCard(props: ShirtType) {
   return (
@@ -23,7 +24,15 @@ export function ShirtCard(props: ShirtType) {
         </p>
       </CardContent>
       <CardFooter class="border-green-50">
-        <A href={`/product/${props.id}`} class="bg-sky-500 w-full">
+        <A
+          href={`/product/${props.id}`}
+          class={cn(
+            buttonVariants({
+              variant: "default",
+            }),
+            "bg-sky-500 w-full"
+          )}
+        >
           Buy Now
         </A>
       </CardFooter>
