@@ -1,5 +1,5 @@
 import { JSX } from "solid-js";
-import { cn } from "../lib/utils";
+import { cn } from "../../lib/utils";
 
 type divProps = JSX.HTMLAttributes<HTMLDivElement>;
 

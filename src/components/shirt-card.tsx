@@ -6,9 +6,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../ui/card";
+} from "./ui/card";
 import { cn } from "../lib/utils";
-import { buttonVariants } from "../ui/button";
+import { buttonVariants } from "./ui/button";
 
 export function ShirtCard(props: ShirtType) {
   return (

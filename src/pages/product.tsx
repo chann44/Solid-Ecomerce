@@ -1,7 +1,7 @@
 import { useParams } from "@solidjs/router";
 import { ShirtType } from "../types/shirtCard";
 import { Show, createResource } from "solid-js";
-import { Button } from "../ui/button";
+import { Button } from "../components/ui/button";
 import { useCartContext } from "../providers/cartProvider";
 
 async function fetchShirt(id: string): Promise<ShirtType> {

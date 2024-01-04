@@ -1,5 +1,5 @@
 import { createSignal } from "solid-js";
-import { Button } from "../ui/button";
+import { Button } from "./ui/button";
 import { BiRegularSun, BiRegularMoon } from "solid-icons/bi";
 
 export function ToggleDarkMode() {
@@ -18,7 +18,7 @@ export function ToggleDarkMode() {
         setDarkMode(!darkMode());
       }}
     >
-      {darkMode() ? <BiRegularSun /> : <BiRegularMoon />}
+      {darkMode() ? <BiRegularMoon /> : <BiRegularSun />}
     </Button>
   );
 }

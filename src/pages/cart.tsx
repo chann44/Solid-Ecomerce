@@ -6,7 +6,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../ui/card";
+} from "../components/ui/card";
 
 export function Cart() {
   const { items } = useCartContext();
